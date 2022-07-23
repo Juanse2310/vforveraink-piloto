@@ -11,7 +11,7 @@
 </head>
 <body>
     <!--NAVBAR-->
-    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: black;" id="navegador">
+    <nav class="navbar navbar-expand-sm navbar-dark fixed-top" style="background-color: black; border-bottom:solid 3px rgb(255,81,0) ;" id="navegador">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="Imagenes/logo.jpg" alt="" id="imaLogo">
@@ -44,7 +44,7 @@
     </nav>
 
 
-    <!--CARROUSEL-->
+       <!--CARROUSEL-->
     <div class="carousel slide pt-5" id="mainSlider" data-bs-ride="carousel" style= position:relative>
 
         <div class="carousel-inner">
@@ -60,10 +60,6 @@
         </div>
     </div>
 
-    <!--RIBON-->
-    <div class="container-fluid" style="background-color: #ff5100">
-        --
-        </div>
     <!--SERVICIOS-->
         <div id="SERVICIOS" class=" w-100" style="background-color:black;"  >
             <div class="container-md p-3" style="background-color: black ;" >
@@ -109,10 +105,16 @@
         </div>
 
     <!--PRESUPUESTO-->    
-    <div class="w-100 bg-secondary" style="height:350px ">
-    <div id="presu" class="container text-center" style="color: rgb(255,81,0)">
+    <section class="bg-secondary text-light py-1" >
+        <div class="container px-5 my-2 ">
+
+         <div  div class="text-center mb-2">
+            <h2 class="fw-bolder" id="tituloServicios">Calculadora de Presupuesto!</h2>
+            <p class="lead mb-0">Completa los datos del tatuaje que estas buscando y conoce el presupuesto en el instante!</p>
+        </div>
+                <div id="presu" class="container text-center" style="color: rgb(255,81,0)">
                     
-                <form class="w-100 align-self-center ">
+                    <form class="w-100 align-self-center ">
                     <div class="mb-2 align-self-center px-5 ">
                       <label for="" class="form-label">Altura del tatuaje?</label>
                       <input id="altura" type="number" class="form-control" aria-describedby="" placeholder="En cm y sin puntos ni comas">
@@ -133,7 +135,7 @@
 
                         <div  class="form-text" style="color: #ff5100">Si es tu primer tatuaje, te hacemos precio especial!!</div>
 
-                    <button type="submit" class="btn btn-info mt-2 mb-2" id="calculador" value="Calcular Presupuesto">Calcular</button>
+                    <button type="submit" class="btn btn-info mt-2 mb-2 btn-outline-warning" id="calculador" value="Calcular Presupuesto">Calcular</button>
                     <div class="mb-2 align-self-center px-5 ">
                         <p class="total">
                             <input type="text" id="resultado">
@@ -145,7 +147,7 @@
                 </div>
             </div>
 
-         </div>
+         </section>
      <!-- DONDE ESTAMOS -->
      <section class="text-light py-1 border-bottom" style="background-color:black;">
         <div class="container px-5 my-2">
@@ -165,38 +167,37 @@
     </section>
 
     <!--CONTACTO-->
-    <section class="text-light py-1" style="background-color:black;">
+    <section class="bg-secondary text-light py-1" >
         <div class="container px-5 my-2 ">
-            <div class="text-center mb-5">
-                <h2 class="fw-bolder" id="tituloServicios">Get in touch</h2>
-                <p class="lead mb-0">We'd love to hear from you</p>
+            <div class="text-center mb-2">
+                <h2 class="fw-bolder" id="tituloServicios">Contactanos!</h2>
+                <p class="lead mb-0">Podes enviarnos tus consultas , comentarios, dudas, intrigas, lo que quieras</p>
             </div>
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-6">
                   
-                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                        <!-- Name input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
-                            <label for="name">Full name</label>
-                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                    <form id="contactForm" style="color: rgb(255,81,0)" >
+                       
+                        <div class="form mb-3">
+
+                            <label for="name">Nombre:</label>
+                            <input class="form-control" id="name" type="text" placeholder="Juan Perez..." />
+                        </div>    
+                        
+                        <div class="form  mb-3">
+                            <label for="email">Email:</label>
+                            <input class="form-control" id="email" type="email" placeholder="Juan.Perez@example.com" />
+                            
                         </div>
-                        <!-- Email address input-->
-                        <div class="form-floating mb-3">
-                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
-                            <label for="email">Email address</label>
-                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
-                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
-                        </div>
-                        <!-- Message input-->
-                        <div class="form-floating mb-3">
-                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
-                            <label for="message">Message</label>
+                        
+                        <div class="form mb-3">
+                            <label for="message">Mensaje:</label>
+                            <textarea class="form-control" id="message" type="text" placeholder="Estoy interesado en ..." style="height: 10rem" data-sb-validations="required"></textarea>
                             <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
                         </div>
-                                        
-                        <!-- Submit Button-->
-                        <div class="d-grid"><button class="btn btn-info mt-2 mb-2 btn-outline-warning" id="submitButton" type="submit">Submit</button></div>
+                              
+                        <div class="d-grid">
+                            <button class="btn btn-info mt-2 mb-2 btn-outline-warning" id="mailBoton" type="submit">Submit</button></div>
                     </form>
                 </div>
             </div>
