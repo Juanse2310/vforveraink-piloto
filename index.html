@@ -45,7 +45,8 @@
 
 
     <!--CARROUSEL-->
-    <div class="carousel slide pt-5" id="mainSlider" data-bs-ride="carousel">
+    <div class="carousel slide pt-5" id="mainSlider" data-bs-ride="carousel" style= position:relative>
+
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="3000">
                 <img src="Imagenes/tattoo1.jpg" alt="" class="img-fluid d-block w-100" style = "height:450px ; object-fit: cover; object-position:center; overflow: hidden">
@@ -108,7 +109,7 @@
         </div>
 
     <!--PRESUPUESTO-->    
-    <div class="w-100 bg-secondary">
+    <div class="w-100 bg-secondary" style="height:350px ">
     <div id="presu" class="container text-center" style="color: rgb(255,81,0)">
                     
                 <form class="w-100 align-self-center ">
@@ -122,7 +123,7 @@
                       <label for="" class="form-label">Ancho del tatuaje?</label>
                       <input type="number" class="form-control" id="ancho" placeholder="En cm y sin puntos ni comas">
                     </div>
-                    <div class="mb-2 align-self-center px-5 ">
+                    <div class="mb-1 align-self-center px-5 ">
                     <select class="form-select mt-4 mb-2 align-self " id="coloreado">
                         <option selected>A color o en negro con sombras?</option>
                         <option value="3">COLOR</option>
@@ -145,7 +146,64 @@
             </div>
 
          </div>
-     
+     <!-- DONDE ESTAMOS -->
+     <section class="text-light py-1 border-bottom" style="background-color:black;">
+        <div class="container px-5 my-2">
+            <div class="text-center mb-3">
+                <h2 class="fw-bolder" id="tituloServicios">Donde nos encontramos?</h2>
+                <p class="lead mb-0">Estamos cerca de bla bla <br>Podes llegar por aqui y por alla y arriba tambien <br>Linesas subte tren colectivo</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3288.1608760030103!2d-58.49876878505584!3d-34.498805559461026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb10f853099df%3A0xf088a2aa47253651!2sDr.%20Mariano%20Moreno%201378%20b1636%2C%20B1637AWN%20La%20Lucila%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1653879500085!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+               
+               
+               
+               
+            </div>
+        </div>
+    </section>
+
+    <!--CONTACTO-->
+    <section class="text-light py-1" style="background-color:black;">
+        <div class="container px-5 my-2 ">
+            <div class="text-center mb-5">
+                <h2 class="fw-bolder" id="tituloServicios">Get in touch</h2>
+                <p class="lead mb-0">We'd love to hear from you</p>
+            </div>
+            <div class="row gx-5 justify-content-center">
+                <div class="col-lg-6">
+                  
+                    <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+                        <!-- Name input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="name" type="text" placeholder="Enter your name..." data-sb-validations="required" />
+                            <label for="name">Full name</label>
+                            <div class="invalid-feedback" data-sb-feedback="name:required">A name is required.</div>
+                        </div>
+                        <!-- Email address input-->
+                        <div class="form-floating mb-3">
+                            <input class="form-control" id="email" type="email" placeholder="name@example.com" data-sb-validations="required,email" />
+                            <label for="email">Email address</label>
+                            <div class="invalid-feedback" data-sb-feedback="email:required">An email is required.</div>
+                            <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div>
+                        </div>
+                        <!-- Message input-->
+                        <div class="form-floating mb-3">
+                            <textarea class="form-control" id="message" type="text" placeholder="Enter your message here..." style="height: 10rem" data-sb-validations="required"></textarea>
+                            <label for="message">Message</label>
+                            <div class="invalid-feedback" data-sb-feedback="message:required">A message is required.</div>
+                        </div>
+                                        
+                        <!-- Submit Button-->
+                        <div class="d-grid"><button class="btn btn-info mt-2 mb-2 btn-outline-warning" id="submitButton" type="submit">Submit</button></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 
     <!--FOOTER-->
     <footer class="footer py-2 bg-dark">

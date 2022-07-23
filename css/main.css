@@ -30,9 +30,13 @@
 .nav-link:hover, .nav-link:focus {
   color: #ff5100;
 }
+
 #SERVICIOS {
     color: white;
   }
-  #tituloServicios {
+
+
+#tituloServicios {
     color: #ff5100  ;
+    
   }
