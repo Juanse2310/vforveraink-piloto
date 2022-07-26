@@ -62,53 +62,53 @@ let productos = [
         id: 2,
         nombre:"Producto 2",
         precio: 850,
-        imagen: "/imagenes/img2.jpg",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id: 3,
         nombre:"Producto 3",
         precio: 750,
-        imagen: "../imagenes/img3.jpeg",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id: 4,
         nombre:"Producto 4",
         precio: 650,
-        imagen: "./imagenes/img4.jpg",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id: 5,
         nombre:"Producto 5",
         precio: 550,
-        imagen: "./imagenes/img5.jpeg",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id: 6,
         nombre:"Producto 6",
         precio: 550,
-        imagen: "./imagenes/img6.jpeg",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id:7,
         nombre:"Producto 7",
         precio: 450,
-        imagen: "./imagenes/img7.png",
+        imagen: "./Imagenes/img1.jpeg",
     },
     {
         id:8,
         nombre:"Producto 8",
         precio: 350,
-        imagen: "./imagenes/img8.jpg",
+        imagen: "./Imagenes/img1.jpeg",
     }
 ];
 
 const contenedor = document.getElementById("container");
 productos.forEach((producto,indice)=>{
     let card = document.createElement("div");
-    card.classList.add("card", "col-sm-12", "col-lg-3")
+    card.classList.add("card", "col-sm-12", "col-lg-3","bg-secondary", "text-white")
     let html =`<img src="${producto.imagen}" class="card-img-top" alt="...">
     <div class="card-body">
-        <h5 class="card-title">${producto.nombre}</h5>
+        <h5 class="card-title" id="tituloServicios">${producto.nombre}</h5>
         <p class="card-text"> $ ${producto.precio}</p>
         <a href="#" class="btn btn-info" onClick="agregarAlCarrito(${indice})">Comprar</a>
     </div>`
