@@ -62,13 +62,13 @@ let productos = [
         id: 2,
         nombre:"Producto 2",
         precio: 850,
-        imagen: "./imagenes/img2.jpg",
+        imagen: "/imagenes/img2.jpg",
     },
     {
         id: 3,
         nombre:"Producto 3",
         precio: 750,
-        imagen: "./imagenes/img3.jpeg",
+        imagen: "../imagenes/img3.jpeg",
     },
     {
         id: 4,
