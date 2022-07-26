@@ -68,37 +68,37 @@ let productos = [
         id: 3,
         nombre:"Producto 3",
         precio: 750,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img3.jpeg",
     },
     {
         id: 4,
         nombre:"Producto 4",
         precio: 650,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img4.jpg",
     },
     {
         id: 5,
         nombre:"Producto 5",
         precio: 550,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img5.jpeg",
     },
     {
         id: 6,
         nombre:"Producto 6",
         precio: 550,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img6.jpeg",
     },
     {
         id:7,
         nombre:"Producto 7",
         precio: 450,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img7.png",
     },
     {
         id:8,
         nombre:"Producto 8",
         precio: 350,
-        imagen: "./Imagenes/img1.jpeg",
+        imagen: "./Imagenes/img8.jpg",
     }
 ];
 
