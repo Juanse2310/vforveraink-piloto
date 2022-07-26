@@ -56,49 +56,49 @@ let productos = [
         id: 1,
         nombre:"Producto 1",
         precio: 950,
-        imagen: src="../Imagenes/img1.jpeg",
+        imagen: src="./Imagenes/img1.jpeg",
     },
     {
         id: 2,
         nombre:"Producto 2",
         precio: 850,
-        imagen: "../imagenes/img2.jpg",
+        imagen: "./imagenes/img2.jpg",
     },
     {
         id: 3,
         nombre:"Producto 3",
         precio: 750,
-        imagen: "../imagenes/img3.jpeg",
+        imagen: "./imagenes/img3.jpeg",
     },
     {
         id: 4,
         nombre:"Producto 4",
         precio: 650,
-        imagen: "../imagenes/img4.jpg",
+        imagen: "./imagenes/img4.jpg",
     },
     {
         id: 5,
         nombre:"Producto 5",
         precio: 550,
-        imagen: "../imagenes/img5.jpeg",
+        imagen: "./imagenes/img5.jpeg",
     },
     {
         id: 6,
         nombre:"Producto 6",
         precio: 550,
-        imagen: "../imagenes/img6.jpeg",
+        imagen: "./imagenes/img6.jpeg",
     },
     {
         id:7,
         nombre:"Producto 7",
         precio: 450,
-        imagen: "../imagenes/img7.png",
+        imagen: "./imagenes/img7.png",
     },
     {
         id:8,
         nombre:"Producto 8",
         precio: 350,
-        imagen: "../imagenes/img8.jpg",
+        imagen: "./imagenes/img8.jpg",
     }
 ];
 
